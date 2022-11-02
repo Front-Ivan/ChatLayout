@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Чат</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <!--    <div class="container">-->
+    <div class="chat-wrapper">
+        <aside class="side-panel">
+            <nav class="side-panel__nav">
+                <section>
+                    <div class="side-panel__logo">
+                        <a href="#">Лого</a>
+                    </div>
+                    <div class="side-panel__menu">
+                        <a href="#" class="side-panel__folder">
+                            <img src="../img/icons/folder.svg" alt="folder">
+                        </a>
+                        <a href="#" class="side-panel__message">
+                            <img src="../img/icons/message.svg" alt="mess">
+                        </a>
+                    </div>
+                </section>
+                <section class="side-panel__logout">
+                    <a href="#">
+                        <img src="../img/icons/exit.svg" alt="logout">
+                    </a>
+                </section>
+            </nav>
+        </aside>
+        <section class="chat">
+            <header class="chat__header">
+
+                <!-- BURGER-MENU -->
+                <div class="burger-menu">
+                    <div class="burger-menu">
+                        <input class="" id="menu-toggle" type="checkbox"/>
+                        <label class="menu-btn" for="menu-toggle">
+                            <span class="burger-menu"></span>
+                        </label>
+
+                        <nav class="menubox">
+
+                            <div class="menubox__up">
+                                <div class="menubox__logo">
+                                    <a class="menu-item" href="#">Лого</a>
+                                </div>
+                                <div class="menubox__folder">
+                                    <a class="menu-item" href="#">
+                                        <img src="../img/icons/folder.svg" alt="folder">
+                                    </a>
+                                </div>
+                                <div class="menubox__message">
+                                    <a class="menu-item" href="#">
+                                        <img src="../img/icons/message.svg" alt="mess">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="menubox__down">
+                                <a href="#">
+                                    <img src="../img/icons/exit.svg" alt="logout">
+                                </a>
+                            </div>
+
+                        </nav>
+                    </div>
+                </div>
+                <!-- END -->
+
+                <section class="chat__title">
+                    <h1>Чаты</h1>
+                </section>
+                <nav class="chat__menu">
+                    <div class="chat__alert chat__alert_right">
+                        <a href="#">
+                            <img src="../img/icons/alert.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="chat__profile">
+                        <a href="#">
+                            <img src="../img/icons/profile.svg" alt="">
+                        </a>
+                    </div>
+                </nav>
+            </header>
+            <main class="chat__main">
+                <section class="chat__first-half">
+                    <section class="chat__top-panel chat__top-panel_first">
+                        <form class="chat__input-search" action="">
+                            <input type="text" placeholder="Поиск">
+                            <img src="../img/icons/magnifier.svg" alt="">
+                        </form>
+                    </section>
+                    <section class="dialogues">
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/1.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Вероника К. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>03.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Когда пытаюсь добавить новую</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/2.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Алина П. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>03.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Что делать, если запись нельзя</p>
+                                    <div class="chat__circle circle">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/3.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Екатерина В. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>03.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Выдает ошибку записи, когда за</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/4.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Кристина О. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>04.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Когда пытаюсь добавить новую</p>
+                                    <div class="chat__circle circle">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/5.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Валентина Ж. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>05.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Не создается новая запись, ког</p>
+                                    <div class="chat__circle circle">
+                                        <span>2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/6.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Вероника К. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>03.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Сервис автоматические удалил</p>
+                                    <div class="chat__circle circle">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/7.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Вероника К. <span class="dialogues__user-id">(#1254)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>03.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Не создается новая запись, ког</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/8.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Вероника К. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>03.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Записана к мастеру, но не могу</p>
+                                    <div class="chat__circle circle">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/9.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Вероника К. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>03.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Выдает ошибку записи, когда за</p>
+                                    <div class="chat__circle circle">
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/10.jpeg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Дед М. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>03.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Выдает ошибку записи, когда за</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/6.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Вероника К. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>03.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Сервис автоматические удалил</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/6.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Вероника К. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>03.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Сервис автоматические удалил</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/6.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Вероника К. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>03.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Сервис автоматические удалил</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/6.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Вероника К. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>03.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Сервис автоматические удалил</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/6.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Вероника К. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>03.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Сервис автоматические удалил</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="dialogues__user">
+                            <div class="dialogues__avatar">
+                                <img src="../img/avatars/6.svg" alt="">
+                            </div>
+                            <div class="dialogues__dialog">
+                                <div class="dialogues__up dialogues__up_indent">
+                                    <div class="dialogues__name dialogues__name_color">
+                                        <span>Вероника К. <span class="dialogues__user-id">(#1212)</span></span>
+                                    </div>
+                                    <div class="dialogues__date">
+                                        <span>03.12.2021</span>
+                                    </div>
+                                </div>
+                                <div class="dialogues__message dialogues__message_indent">
+                                    <p>Сервис автоматические удалил</p>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+                <section class="chat__second-half">
+                    <section class="chat__top-panel chat__top-panel_second">
+                        <div class="chat__row chat__row_center">
+                            <div class="chat__avatar chat__avatar_indent">
+                                <img src="../img/avatars/1.svg" alt="img">
+                            </div>
+                            <div class="chat__name">
+                                <span>Вероника Киреева</span>
+                            </div>
+                            <div class="chat__back">
+                                <img src="../img/icons/back.svg" alt="">
+                                <div class="chat__circle">
+                                    <span>6</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat__file">
+                            <img src="../img/icons/file.png" alt="">
+                        </div>
+                    </section>
+                    <section class="note note_center">
+                        <div class="note__text">
+                            <p><span>Тикет:</span><span> #1721</span></p>
+                            <p>Не работает кнопка добавить запись</p>
+                        </div>
+                    </section>
+                    <section class="dialog">
+                        <div class="dialog__when">
+                            <h3>СЕГОДНЯ</h3>
+                        </div>
+                        <div class="dialog__window">
+                            <div class="dialog__interlocutor">
+                                <img src="../img/message/screen.svg" alt="img">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить
+                                    запись» не доступна. Работает через раз. Утром было все нормально, сейчас
+                                    снова.</p>
+                            </div>
+                            <div class="dialog__you">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить запись»
+                                    не доступна. Работает через раз. Утром было все нормально, сейчас снова.</p>
+                            </div>
+                            <div class="dialog__interlocutor">
+                                <img src="../img/message/screen.svg" alt="img">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить
+                                    запись» не доступна. Работает через раз. Утром было все нормально, сейчас
+                                    снова.</p>
+                            </div>
+                            <div class="dialog__you">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить запись»
+                                    не доступна. Работает через раз. Утром было все нормально, сейчас снова.</p>
+                            </div>
+                            <div class="dialog__interlocutor">
+                                <img src="../img/message/screen.svg" alt="img">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить
+                                    запись» не доступна. Работает через раз. Утром было все нормально, сейчас
+                                    снова.</p>
+                            </div>
+                            <div class="dialog__you">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить запись»
+                                    не доступна. Работает через раз. Утром было все нормально, сейчас снова.</p>
+                            </div>
+                            <div class="dialog__interlocutor">
+                                <img src="../img/message/screen.svg" alt="img">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить
+                                    запись» не доступна. Работает через раз. Утром было все нормально, сейчас
+                                    снова.</p>
+                            </div>
+                            <div class="dialog__you">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить запись»
+                                    не доступна. Работает через раз. Утром было все нормально, сейчас снова.</p>
+                            </div>
+                            <div class="dialog__interlocutor">
+                                <img src="../img/message/screen.svg" alt="img">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить
+                                    запись» не доступна. Работает через раз. Утром было все нормально, сейчас
+                                    снова.</p>
+                            </div>
+                            <div class="dialog__you">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить запись»
+                                    не доступна. Работает через раз. Утром было все нормально, сейчас снова.</p>
+                            </div>
+                            <div class="dialog__interlocutor">
+                                <img src="../img/message/screen.svg" alt="img">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить
+                                    запись» не доступна. Работает через раз. Утром было все нормально, сейчас
+                                    снова.</p>
+                            </div>
+                            <div class="dialog__you">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить запись»
+                                    не доступна. Работает через раз. Утром было все нормально, сейчас снова.</p>
+                            </div>
+                            <div class="dialog__interlocutor">
+                                <img src="../img/message/screen.svg" alt="img">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить
+                                    запись» не доступна. Работает через раз. Утром было все нормально, сейчас
+                                    снова.</p>
+                            </div>
+                            <div class="dialog__you">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить запись»
+                                    не доступна. Работает через раз. Утром было все нормально, сейчас снова.</p>
+                            </div>
+                            <div class="dialog__interlocutor">
+                                <img src="../img/message/screen.svg" alt="img">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить
+                                    запись» не доступна. Работает через раз. Утром было все нормально, сейчас
+                                    снова.</p>
+                            </div>
+                            <div class="dialog__you">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить запись»
+                                    не доступна. Работает через раз. Утром было все нормально, сейчас снова.</p>
+                            </div>
+                            <div class="dialog__interlocutor">
+                                <img src="../img/message/screen.svg" alt="img">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить
+                                    запись» не доступна. Работает через раз. Утром было все нормально, сейчас
+                                    снова.</p>
+                            </div>
+                            <div class="dialog__you">
+                                <p>Когда пытаюсь добавить новую запись, все кнопки работают, но кнопка «Добавить запись»
+                                    не доступна. Работает через раз. Утром было все нормально, сейчас снова.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <form action="" class="chat__bottom-panel">
+                        <div class="chat__input-message">
+                            <input type="text" placeholder="Введите сообщение" id="message" name="message">
+                            <img src="../img/icons/clip.svg" alt="addFile" class="addFile">
+                            <div class="chat__input-files d-none">
+                                <label for="photo-video">
+                                    <div>
+                                        <img src="../img/icons/input1.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <span>Фото или видео</span>
+                                    </div>
+                                </label>
+                                <input type="file" id="photo-video" name="photo-video">
+
+                                <label for="document">
+                                    <div>
+                                        <img src="../img/icons/input2.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <span>Документ</span>
+                                    </div>
+                                </label>
+                                <input type="file" id="document" name="document">
+                            </div>
+                        </div>
+                        <div class="chat__btn">
+                            <button type="submit">
+                                <img src="../img/icons/sending.svg" alt="send">
+                            </button>
+                        </div>
+                    </form>
+                </section>
+            </main>
+        </section>
+    </div>
+    <!--    </div>-->
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
